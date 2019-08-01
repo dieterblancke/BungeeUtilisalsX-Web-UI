@@ -28,9 +28,7 @@
 <footer class="page-footer">
     <div class="container" style="padding-bottom: 0">
         <p>
-            © 2018 - {{ date("Y") }} BungeeUtilisalsX -
-            Site made with <span style="color: #c60000;">&hearts;</span> by
-            <a href="//www.dbsoftwares.eu">DBSoftwares</a>.
+            @lang('messages.footer')
         </p>
     </div>
 </footer>

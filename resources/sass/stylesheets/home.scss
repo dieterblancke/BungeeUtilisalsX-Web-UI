@@ -4,6 +4,7 @@
     flex-wrap: wrap;
 
     > li {
+        margin-top: 20px;
         display: inline-block;
         width: 32%;
         text-align: center;
@@ -20,6 +21,16 @@
             border-bottom: 1px solid lightgray;
 
             a {
+                figure {
+                    display: flex;
+                    align-items: center;
+                    margin: 0;
+
+                    .name {
+                        margin-left: 10px;
+                    }
+                }
+
                 width: 90%;
                 display: flex;
                 justify-content: space-between;
@@ -60,6 +71,54 @@
         li {
             .name {
 
+            }
+        }
+    }
+
+    .date {
+        color: #fff;
+        background-color: $latest-punishments-date-bg;
+        padding: 3px 5px;
+        font-size: .8rem;
+        border-radius: 5px;
+    }
+
+    @media (max-width: 1500px) {
+        justify-content: center;
+
+        > li:first-of-type {
+            margin-right: 15px;
+        }
+
+        > li {
+            width: 49%;
+        }
+    }
+
+    @media (max-width: 1050px) {
+        justify-content: center;
+
+        > li:first-of-type {
+            margin-right: 0
+        }
+
+        > li {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 600px) {
+        justify-content: center;
+
+        > li:first-of-type {
+            margin-right: 0
+        }
+
+        > li li a {
+            display: block;
+
+            figure {
+                justify-content: center;
             }
         }
     }
