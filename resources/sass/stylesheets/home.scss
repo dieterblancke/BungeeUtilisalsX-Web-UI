@@ -1,0 +1,66 @@
+#recentpunishments > ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    > li {
+        display: inline-block;
+        width: 32%;
+        text-align: center;
+        border: 1px darkgray solid;
+
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+
+        h3 {
+            padding: 15px;
+        }
+
+        li {
+            border-bottom: 1px solid lightgray;
+
+            a {
+                width: 90%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                padding: 6px 0;
+                margin: auto;
+            }
+        }
+    }
+
+    li:nth-child(1) h3 {
+        background: $latest-bans-head-bg;
+        color: $latest-bans-head-color;
+
+        li {
+            .name {
+
+            }
+        }
+    }
+
+    li:nth-child(2) h3 {
+        background: $latest-mutes-head-bg;
+        color: $latest-mutes-head-color;
+
+        li {
+            .name {
+
+            }
+        }
+    }
+
+    li:nth-child(3) h3 {
+        background: $latest-kicks-warns-head-bg;
+        color: $latest-kicks-warns-head-color;
+
+        li {
+            .name {
+
+            }
+        }
+    }
+}

@@ -1,19 +1,25 @@
-// Body
-$body-bg: #f8fafc;
+// Importing fonts
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
-// Typography
-$font-family-sans-serif: 'Nunito', sans-serif;
-$font-size-base: 0.9rem;
-$line-height-base: 1.6;
+// Header
+$header-bg: linear-gradient(to bottom right, #5200c5 10%, #29ABE2 100%);
+$header-text-color: white;
+$home-header-height: 50vh;
 
-// Colors
-$blue: #3490dc;
-$indigo: #6574cd;
-$purple: #9561e2;
-$pink: #f66d9b;
-$red: #e3342f;
-$orange: #f6993f;
-$yellow: #ffed4a;
-$green: #38c172;
-$teal: #4dc0b5;
-$cyan: #6cb2eb;
+$header-font: 'Raleway', sans-serif;
+
+// Navigation
+$nav-text-color: white;
+$nav-item-font-size: 1.2rem;
+
+// General stuff
+$main-font-family: 'Raleway', sans-serif;
+
+// Home Page
+$latest-bans-head-bg: #6700ff;
+$latest-mutes-head-bg: #6700ff;
+$latest-kicks-warns-head-bg: #6700ff;
+
+$latest-bans-head-color: white;
+$latest-mutes-head-color: white;
+$latest-kicks-warns-head-color: white;

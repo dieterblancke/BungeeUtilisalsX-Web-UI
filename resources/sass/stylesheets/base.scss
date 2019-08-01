@@ -1,0 +1,52 @@
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    margin: 0;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+.date.permanent-red {
+    background-color: red;
+}
+
+.date.temporary-green {
+    background-color: green;
+}
+
+.date {
+    color: #fff;
+    background-color: #1e90ff;
+    padding: 3px 5px;
+    font-size: .8rem;
+    border-radius: 5px;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    padding: 25px 0;
+    font-family: $main-font-family;
+}
+
+footer {
+    padding: 20px 0;
+    background: #111;
+    box-shadow: 0 9999px 0 9999px #111;
+    color: white;
+
+    p {
+        margin: 0;
+    }
+}
