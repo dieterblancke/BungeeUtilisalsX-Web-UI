@@ -32,127 +32,21 @@
                 <article>
                     <h3>@lang('messages.homepage.body.latestbans')</h3>
 
-                    <ul>
-                        <li>
-                            <a href="//stats.staging.centrixpvp.eu/punishments/player/XxSoulCreeperxX">
+                    <ul id="recentbans">
+                        <!-- recent bans -->
+                        <li class="default" style="display: none; visibility: hidden;">
+                            <a :href="'/users/' + username">
                                 <figure>
-                                    <img src="//cravatar.eu/head/didjee2/32" alt="Player Skull" title="Player Skull">
+                                    <img src="//cravatar.eu/head/didjee2/32" alt="'Player Skull of didjee2" title="'Player Skull of didjee2">
 
                                     <figcaption>
                                         <span class="name">didjee2</span>
                                     </figcaption>
                                 </figure>
-                                <span class="date">2019-07-31 21:26:15</span>
+                                <span class="date">unknown</span>
                             </a>
                         </li>
-                        <li>
-                            <a href="//stats.staging.centrixpvp.eu/punishments/player/XxSoulCreeperxX">
-                                <figure>
-                                    <img src="//cravatar.eu/head/didjee2/32" alt="Player Skull" title="Player Skull">
 
-                                    <figcaption>
-                                        <span class="name">didjee2</span>
-                                    </figcaption>
-                                </figure>
-                                <span class="date">2019-07-31 21:26:15</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="//stats.staging.centrixpvp.eu/punishments/player/XxSoulCreeperxX">
-                                <figure>
-                                    <img src="//cravatar.eu/head/didjee2/32" alt="Player Skull" title="Player Skull">
-
-                                    <figcaption>
-                                        <span class="name">didjee2</span>
-                                    </figcaption>
-                                </figure>
-                                <span class="date">2019-07-31 21:26:15</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="//stats.staging.centrixpvp.eu/punishments/player/XxSoulCreeperxX">
-                                <figure>
-                                    <img src="//cravatar.eu/head/didjee2/32" alt="Player Skull" title="Player Skull">
-
-                                    <figcaption>
-                                        <span class="name">didjee2</span>
-                                    </figcaption>
-                                </figure>
-                                <span class="date">2019-07-31 21:26:15</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="//stats.staging.centrixpvp.eu/punishments/player/XxSoulCreeperxX">
-                                <figure>
-                                    <img src="//cravatar.eu/head/didjee2/32" alt="Player Skull" title="Player Skull">
-
-                                    <figcaption>
-                                        <span class="name">didjee2</span>
-                                    </figcaption>
-                                </figure>
-                                <span class="date">2019-07-31 21:26:15</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="//stats.staging.centrixpvp.eu/punishments/player/XxSoulCreeperxX">
-                                <figure>
-                                    <img src="//cravatar.eu/head/didjee2/32" alt="Player Skull" title="Player Skull">
-
-                                    <figcaption>
-                                        <span class="name">didjee2</span>
-                                    </figcaption>
-                                </figure>
-                                <span class="date">2019-07-31 21:26:15</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="//stats.staging.centrixpvp.eu/punishments/player/XxSoulCreeperxX">
-                                <figure>
-                                    <img src="//cravatar.eu/head/didjee2/32" alt="Player Skull" title="Player Skull">
-
-                                    <figcaption>
-                                        <span class="name">didjee2</span>
-                                    </figcaption>
-                                </figure>
-                                <span class="date">2019-07-31 21:26:15</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="//stats.staging.centrixpvp.eu/punishments/player/XxSoulCreeperxX">
-                                <figure>
-                                    <img src="//cravatar.eu/head/didjee2/32" alt="Player Skull" title="Player Skull">
-
-                                    <figcaption>
-                                        <span class="name">didjee2</span>
-                                    </figcaption>
-                                </figure>
-                                <span class="date">2019-07-31 21:26:15</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="//stats.staging.centrixpvp.eu/punishments/player/XxSoulCreeperxX">
-                                <figure>
-                                    <img src="//cravatar.eu/head/didjee2/32" alt="Player Skull" title="Player Skull">
-
-                                    <figcaption>
-                                        <span class="name">didjee2</span>
-                                    </figcaption>
-                                </figure>
-                                <span class="date">2019-07-31 21:26:15</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="//stats.staging.centrixpvp.eu/punishments/player/XxSoulCreeperxX">
-                                <figure>
-                                    <img src="//cravatar.eu/head/didjee2/32" alt="Player Skull" title="Player Skull">
-
-                                    <figcaption>
-                                        <span class="name">didjee2</span>
-                                    </figcaption>
-                                </figure>
-                                <span class="date">2019-07-31 21:26:15</span>
-                            </a>
-                        </li>
                     </ul>
                 </article>
             </li>
@@ -160,127 +54,8 @@
                 <article>
                     <h3>@lang('messages.homepage.body.latestmutes')</h3>
 
-                    <ul>
-                        <li>
-                            <a href="//stats.staging.centrixpvp.eu/punishments/player/XxSoulCreeperxX">
-                                <figure>
-                                    <img src="//cravatar.eu/head/didjee2/32" alt="Player Skull" title="Player Skull">
-
-                                    <figcaption>
-                                        <span class="name">didjee2</span>
-                                    </figcaption>
-                                </figure>
-                                <span class="date">2019-07-31 21:26:15</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="//stats.staging.centrixpvp.eu/punishments/player/XxSoulCreeperxX">
-                                <figure>
-                                    <img src="//cravatar.eu/head/didjee2/32" alt="Player Skull" title="Player Skull">
-
-                                    <figcaption>
-                                        <span class="name">didjee2</span>
-                                    </figcaption>
-                                </figure>
-                                <span class="date">2019-07-31 21:26:15</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="//stats.staging.centrixpvp.eu/punishments/player/XxSoulCreeperxX">
-                                <figure>
-                                    <img src="//cravatar.eu/head/didjee2/32" alt="Player Skull" title="Player Skull">
-
-                                    <figcaption>
-                                        <span class="name">didjee2</span>
-                                    </figcaption>
-                                </figure>
-                                <span class="date">2019-07-31 21:26:15</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="//stats.staging.centrixpvp.eu/punishments/player/XxSoulCreeperxX">
-                                <figure>
-                                    <img src="//cravatar.eu/head/didjee2/32" alt="Player Skull" title="Player Skull">
-
-                                    <figcaption>
-                                        <span class="name">didjee2</span>
-                                    </figcaption>
-                                </figure>
-                                <span class="date">2019-07-31 21:26:15</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="//stats.staging.centrixpvp.eu/punishments/player/XxSoulCreeperxX">
-                                <figure>
-                                    <img src="//cravatar.eu/head/didjee2/32" alt="Player Skull" title="Player Skull">
-
-                                    <figcaption>
-                                        <span class="name">didjee2</span>
-                                    </figcaption>
-                                </figure>
-                                <span class="date">2019-07-31 21:26:15</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="//stats.staging.centrixpvp.eu/punishments/player/XxSoulCreeperxX">
-                                <figure>
-                                    <img src="//cravatar.eu/head/didjee2/32" alt="Player Skull" title="Player Skull">
-
-                                    <figcaption>
-                                        <span class="name">didjee2</span>
-                                    </figcaption>
-                                </figure>
-                                <span class="date">2019-07-31 21:26:15</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="//stats.staging.centrixpvp.eu/punishments/player/XxSoulCreeperxX">
-                                <figure>
-                                    <img src="//cravatar.eu/head/didjee2/32" alt="Player Skull" title="Player Skull">
-
-                                    <figcaption>
-                                        <span class="name">didjee2</span>
-                                    </figcaption>
-                                </figure>
-                                <span class="date">2019-07-31 21:26:15</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="//stats.staging.centrixpvp.eu/punishments/player/XxSoulCreeperxX">
-                                <figure>
-                                    <img src="//cravatar.eu/head/didjee2/32" alt="Player Skull" title="Player Skull">
-
-                                    <figcaption>
-                                        <span class="name">didjee2</span>
-                                    </figcaption>
-                                </figure>
-                                <span class="date">2019-07-31 21:26:15</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="//stats.staging.centrixpvp.eu/punishments/player/XxSoulCreeperxX">
-                                <figure>
-                                    <img src="//cravatar.eu/head/didjee2/32" alt="Player Skull" title="Player Skull">
-
-                                    <figcaption>
-                                        <span class="name">didjee2</span>
-                                    </figcaption>
-                                </figure>
-                                <span class="date">2019-07-31 21:26:15</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="//stats.staging.centrixpvp.eu/punishments/player/XxSoulCreeperxX">
-                                <figure>
-                                    <img src="//cravatar.eu/head/didjee2/32" alt="Player Skull" title="Player Skull">
-
-                                    <figcaption>
-                                        <span class="name">didjee2</span>
-                                    </figcaption>
-                                </figure>
-                                <span class="date">2019-07-31 21:26:15</span>
-                            </a>
-                        </li>
+                    <ul id="recentmutes">
+                        <!-- recent mutes -->
                     </ul>
                 </article>
             </li>
@@ -288,62 +63,15 @@
                 <article>
                     <h3>@lang('messages.homepage.body.latestkickwarns')</h3>
 
-                    <ul>
-                        <li>
-                            <a href="//stats.staging.centrixpvp.eu/punishments/player/XxSoulCreeperxX">
-                                <figure>
-                                    <img src="//cravatar.eu/head/didjee2/32" alt="Player Skull" title="Player Skull">
-
-                                    <figcaption>
-                                        <span class="name">didjee2</span>
-                                    </figcaption>
-                                </figure>
-
-                                <span class="date">2019-07-31 21:26:15</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="//stats.staging.centrixpvp.eu/punishments/player/XxSoulCreeperxX">
-                                <figure>
-                                    <img src="//cravatar.eu/head/didjee2/32" alt="Player Skull" title="Player Skull">
-
-                                    <figcaption>
-                                        <span class="name">didjee2</span>
-                                    </figcaption>
-                                </figure>
-
-                                <span class="date">2019-07-31 21:26:15</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="//stats.staging.centrixpvp.eu/punishments/player/XxSoulCreeperxX">
-                                <figure>
-                                    <img src="//cravatar.eu/head/didjee2/32" alt="Player Skull" title="Player Skull">
-
-                                    <figcaption>
-                                        <span class="name">didjee2</span>
-                                    </figcaption>
-                                </figure>
-
-                                <span class="date">2019-07-31 21:26:15</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="//stats.staging.centrixpvp.eu/punishments/player/XxSoulCreeperxX">
-                                <figure>
-                                    <img src="//cravatar.eu/head/didjee2/32" alt="Player Skull" title="Player Skull">
-
-                                    <figcaption>
-                                        <span class="name">didjee2</span>
-                                    </figcaption>
-                                </figure>
-
-                                <span class="date">2019-07-31 21:26:15</span>
-                            </a>
-                        </li>
+                    <ul id="recentkicksandwarns">
+                        <!-- recent kicks and warns -->
                     </ul>
                 </article>
             </li>
         </ul>
     </div>
+@endsection
+
+@section('scripts')
+    <script src="{{ asset('js/home.js') }}"></script>
 @endsection

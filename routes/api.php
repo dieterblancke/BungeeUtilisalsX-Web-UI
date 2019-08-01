@@ -1,7 +1,5 @@
 <?php
 
-use Illuminate\Http\Request;
-
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -13,6 +11,8 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+use Illuminate\Support\Facades\Route;
+
+Route::get('bans/recent', 'ApiController@getRecentBans');
+Route::get('mutes/recent', 'ApiController@getRecentMutes');
+Route::get('kickwarns/recent', 'ApiController@getRecentKickAndWarns');

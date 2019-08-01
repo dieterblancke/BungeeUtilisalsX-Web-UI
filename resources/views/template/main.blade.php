@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="author" content="Dieter Blancke"/>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="icon" type="image/png" href="{{ asset("images/bulogo.png") }}"/>
 
     <title>@yield('title')</title>
@@ -22,7 +23,7 @@
 <header>
     @yield('header')
 </header>
-<main>
+<main id="app">
     @yield('content')
 </main>
 <footer class="page-footer">
@@ -38,8 +39,6 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous">
 </script>
-<script src="{{ asset('js/particle.min.js') }}"></script>
-<script src="{{ asset('js/main.js') }}"></script>
 
 @yield('scripts')
 </body>

@@ -9,6 +9,8 @@ class Mutes extends Model
     //
     use PunishmentModelTrait;
 
+    protected $hidden = ['ip'];
+
     public function __construct(array $attributes = [])
     {
         parent::__construct($attributes);
