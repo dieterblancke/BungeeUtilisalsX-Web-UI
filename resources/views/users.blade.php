@@ -30,13 +30,6 @@
 @endsection
 
 @section('content')
-    <div id="user">
-        <article>
-            <h2>General Information</h2>
-
-
-        </article>
-    </div>
     <div id="recentpunishments">
         <ul>
             <li>

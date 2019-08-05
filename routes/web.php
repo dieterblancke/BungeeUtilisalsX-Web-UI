@@ -13,4 +13,10 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', 'PageController@home');
+Route::get('/', 'PageController@home')->name('home');
+Route::get('/users', 'PageController@users')->name('users');
+Route::get('/bans', 'PageController@bans')->name('bans');
+Route::get('/mutes', 'PageController@mutes')->name('mutes');
+Route::get('/kicks', 'PageController@kicks')->name('kicks');
+Route::get('/warns', 'PageController@warns')->name('warns');
+Route::get('/punishmentactions', 'PageController@punishmentactions')->name('punishmentactions');

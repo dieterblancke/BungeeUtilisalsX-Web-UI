@@ -13,6 +13,7 @@ return [
         'punishmentactions' => 'Punishment Actions',
     ],
     'homepage' => [
+        'title' => 'BungeeUtilisalsX - Home',
         'header' => [
             'title' => 'Welcome to the BungeeUtilisals Web UI',
             'text' => "
