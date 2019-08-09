@@ -40,39 +40,25 @@
                 margin: auto;
             }
         }
+
+        li:last-of-type {
+            border-bottom: none;
+        }
     }
 
     li:nth-child(1) h3 {
         background: $latest-bans-head-bg;
         color: $latest-bans-head-color;
-
-        li {
-            .name {
-
-            }
-        }
     }
 
     li:nth-child(2) h3 {
         background: $latest-mutes-head-bg;
         color: $latest-mutes-head-color;
-
-        li {
-            .name {
-
-            }
-        }
     }
 
     li:nth-child(3) h3 {
         background: $latest-kicks-warns-head-bg;
         color: $latest-kicks-warns-head-color;
-
-        li {
-            .name {
-
-            }
-        }
     }
 
     .date {
