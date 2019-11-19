@@ -34,9 +34,10 @@ class ApiController extends Controller
         return Mutes::getPage($page, 15);
     }
 
-    public function getRecentUsers()
-    {
-        return Users::last(20);
+    public function getUsersPage() {
+        $page = Input::get('page', 1);
+
+        return Users::getPage($page, 15);
     }
 
     public function getWarnsPage() {

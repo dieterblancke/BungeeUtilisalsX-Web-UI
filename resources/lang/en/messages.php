@@ -32,7 +32,7 @@ return [
     ],
     'users' => [
         'title' => 'BungeeUtilisalsX - Users',
-        'newusers' => 'Newest Users',
+        'header' => 'Users',
     ],
     'bans' => [
         'title' => 'BungeeUtilisalsX - Bans',

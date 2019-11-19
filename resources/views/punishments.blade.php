@@ -36,7 +36,7 @@
             <th scope="col">Username</th>
             <th scope="col">Reason</th>
             <th scope="col">By</th>
-            <th scope="col">Date
+            <th scope="col">Date</th>
             @if($type !== 'kick' && $type !== 'warn')
                 <th scope="col">Status</th>
                 <th scope="col">Expires At</th>

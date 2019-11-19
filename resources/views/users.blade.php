@@ -5,29 +5,27 @@
 @endsection
 
 @section('content')
-    <div id="newusers">
-        <article>
-            <h3>@lang('messages.users.newusers')</h3>
+    <div class="d-flex justify-content-between">
+        <h3>@lang('messages.users.header')</h3>
 
-            <ul id="recentusers">
-                <!-- recent users -->
-                <li class="default" style="display: none; visibility: hidden;">
-                    <a :href="'/users/' + username">
-                        <figure>
-                            <img src="//cravatar.eu/head/didjee2/32" alt="'Player Skull of didjee2"
-                                 title="'Player Skull of didjee2">
-
-                            <figcaption>
-                                <span class="name">didjee2</span>
-                            </figcaption>
-                        </figure>
-                        <span class="date">unknown</span>
-                    </a>
-                </li>
-
-            </ul>
-        </article>
+        <ul class="pagination">
+            <!-- Page numbers should come here -->
+        </ul>
     </div>
+
+    <table id="userslist" class="table table-striped table-bordered table-hover">
+        <thead class="thead-modern">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Username</th>
+            <th scope="col">Language</th>
+            <th scope="col">First Join</th>
+            <th scope="col">Last Seen</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
 @endsection
 
 @section('scripts')

@@ -6,7 +6,7 @@ namespace App;
 
 use Illuminate\Support\Facades\Cache;
 
-trait PunishmentModelTrait
+trait PageableTrait
 {
 
     public static function last($amount = 10)

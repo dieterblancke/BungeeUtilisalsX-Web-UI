@@ -2,9 +2,11 @@
 
 namespace App;
 
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Lang;
 
-class Kicks extends Model
+class PunishmentActions extends Model
 {
     //
     use PageableTrait;
@@ -15,6 +17,6 @@ class Kicks extends Model
     {
         parent::__construct($attributes);
 
-        $this->table = config('settings.tables.kicks');
+        $this->table = config('settings.tables.bans');
     }
 }

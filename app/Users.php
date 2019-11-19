@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Cache;
 
 class Users extends Model
 {
@@ -16,7 +17,13 @@ class Users extends Model
         $this->table = config('settings.tables.users');
     }
 
-    public static function last($amount = 10) {
-        return self::query()->orderByDesc('firstlogin')->limit($amount)->get();
+    public static function getPage(int $page, int $pageSize)
+    {
+        if (config('settings.cache.enabled')) {
+            return Cache::remember('cache_' . static::class . '_page_' . $page, config('settings.cache.duration'), function () use ($page, $pageSize) {
+                return parent::query()->orderByDesc('firstlogin')->paginate($pageSize, ['*'], 'page', $page);
+            });
+        }
+        return parent::query()->orderByDesc('firstlogin')->paginate($pageSize, ['*'], 'page', $page);
     }
 }

@@ -225,51 +225,6 @@ footer p {
   }
 }
 
-#newusers article {
-  margin-top: 20px;
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-  border: 1px darkgray solid;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-#newusers article h3 {
-  background: #6700ff;
-  color: #fff;
-  padding: 15px;
-}
-#newusers article li {
-  border-bottom: 1px solid lightgray;
-}
-#newusers article li a {
-  width: 90%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6px 0;
-  margin: auto;
-}
-#newusers article li a figure {
-  display: flex;
-  align-items: center;
-  margin: 0;
-}
-#newusers article li a figure .name {
-  margin-left: 10px;
-}
-#newusers article li:last-of-type {
-  border-bottom: none;
-}
-
-.date {
-  color: #fff;
-  background-color: #d53c91;
-  padding: 3px 5px;
-  font-size: 0.8rem;
-  border-radius: 5px;
-}
-
 .thead-modern {
   background: #6700ff;
   font-size: 1.2rem;

@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Lang;
 class Mutes extends Model
 {
     //
-    use PunishmentModelTrait;
+    use PageableTrait;
 
     protected $hidden = ['ip'];
     protected $appends = ['expires_at', 'status'];
