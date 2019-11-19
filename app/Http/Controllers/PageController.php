@@ -17,22 +17,22 @@ class PageController extends Controller
 
     public function bans()
     {
-        return view('bans');
+        return view('punishments', ['type' => 'ban']);
     }
 
     public function mutes()
     {
-        return view('mutes');
+        return view('punishments', ['type' => 'mute']);
     }
 
     public function kicks()
     {
-        return view('kicks');
+        return view('punishments', ['type' => 'kick']);
     }
 
     public function warns()
     {
-        return view('warns');
+        return view('punishments', ['type' => 'warn']);
     }
 
     public function punishmentactions()

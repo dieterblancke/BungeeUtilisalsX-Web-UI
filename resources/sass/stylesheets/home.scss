@@ -69,6 +69,14 @@
         border-radius: 5px;
     }
 
+    a:hover {
+        text-decoration: none;
+    }
+
+    a:hover figure {
+        text-decoration: underline;
+    }
+
     @media (max-width: 1500px) {
         justify-content: center;
 

@@ -1,0 +1,21 @@
+.thead-modern {
+    background: $bans-table-header-bg;
+    font-size: 1.2rem;
+    color: $bans-table-header-color;
+}
+
+.page-link.active {
+    background: $bans-pagination-active-bg;
+    color: $bans-pagination-active-color;
+}
+
+table tr td figure {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 0;
+}
+
+table tr td figure img {
+    margin-right: 10px;
+}

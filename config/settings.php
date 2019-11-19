@@ -12,5 +12,7 @@ return [
         // time is in seconds
         'duration' => 300,
     ],
-    'locale' => 'en'
+    'locale' => 'en',
+    'timezone' => 'Europe/Brussels',
+    'center-html-tables' => false,
 ];

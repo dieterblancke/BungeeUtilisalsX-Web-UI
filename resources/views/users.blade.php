@@ -1,7 +1,7 @@
 @extends('template.main')
 
 @section('title')
-    @lang('messages.homepage.title')
+    @lang('messages.users.title')
 @endsection
 
 @section('content')
@@ -9,8 +9,8 @@
         <article>
             <h3>@lang('messages.users.newusers')</h3>
 
-            <ul id="recentbans">
-                <!-- recent bans -->
+            <ul id="recentusers">
+                <!-- recent users -->
                 <li class="default" style="display: none; visibility: hidden;">
                     <a :href="'/users/' + username">
                         <figure>
@@ -31,5 +31,5 @@
 @endsection
 
 @section('scripts')
-    <script src="{{ asset('js/home.js') }}"></script>
+    <script src="{{ asset('js/users.js') }}"></script>
 @endsection

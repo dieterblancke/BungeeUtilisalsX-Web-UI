@@ -3,13 +3,13 @@
 
 // Header
 $header-bg: linear-gradient(to bottom right, #5200c5 10%, #29ABE2 100%);
-$header-text-color: white;
-$home-header-height: 50vh;
+$header-text-color: #fff;
+$home-header-height: 40vh;
 
 $header-font: 'Raleway', sans-serif;
 
 // Navigation
-$nav-text-color: white;
+$nav-text-color: #fff;
 $nav-item-font-size: 1.2rem;
 
 // General stuff
@@ -20,12 +20,20 @@ $latest-bans-head-bg: #6700ff;
 $latest-mutes-head-bg: #6700ff;
 $latest-kicks-warns-head-bg: #6700ff;
 
-$latest-bans-head-color: white;
-$latest-mutes-head-color: white;
-$latest-kicks-warns-head-color: white;
+$latest-bans-head-color: #fff;
+$latest-mutes-head-color: #fff;
+$latest-kicks-warns-head-color: #fff;
 
 $latest-punishments-date-bg: #d53c91;
+$latest-punishments-date-color: #fff;
 
 // Users Page
 $newest-users-head-bg: #6700ff;
-$newest-users-head-color: white;
+$newest-users-head-color: #fff;
+
+// Bans page
+$bans-table-header-bg: #6700ff;
+$bans-table-header-color: #fff;
+
+$bans-pagination-active-bg: #6700ffb3;
+$bans-pagination-active-color: #fff;
