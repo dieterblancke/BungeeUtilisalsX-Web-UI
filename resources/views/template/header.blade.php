@@ -13,10 +13,18 @@
 </div>
 
 <div id="welcome">
-    <h2>@lang('messages.homepage.header.title')</h2>
-    <p>
-        @lang('messages.homepage.header.text')
-    </p>
+    <div class="combiner">
+        <h2>@lang('messages.homepage.header.title')</h2>
+        <p>
+            @lang('messages.homepage.header.text')
+        </p>
+    </div>
+    @if(config('settings.counter.enabled'))
+        <div class="counter">
+            <p class="count">JOIN <span>0</span> ONLINE PLAYERS</p>
+            <p class="ip">SERVER IP » <span>{{ config('settings.counter.address') }}</span></p>
+        </div>
+    @endif
 </div>
 
 <div class="wrapper"></div>
