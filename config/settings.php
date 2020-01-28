@@ -12,5 +12,9 @@ return [
         // time is in seconds
         'duration' => 300,
     ],
+    'counter' => [
+        'enabled' => true,
+        'address' => 'test.dbsoftwares.eu'
+    ],
     'locale' => 'en'
 ];
