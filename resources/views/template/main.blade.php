@@ -27,7 +27,7 @@
 <body>
 
 <header>
-    @yield('header')
+    @include('template.header')
 </header>
 <main id="app">
     @yield('content')

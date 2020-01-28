@@ -16,5 +16,7 @@ return [
         'enabled' => true,
         'address' => 'test.dbsoftwares.eu'
     ],
-    'locale' => 'en'
+    'locale' => 'en',
+    'timezone' => 'Europe/Brussels',
+    'center-html-tables' => false,
 ];

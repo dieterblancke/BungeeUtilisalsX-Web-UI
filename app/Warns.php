@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Warns extends Model
 {
     //
-    use PunishmentModelTrait;
+    use PageableTrait;
 
     protected $hidden = ['ip'];
 
