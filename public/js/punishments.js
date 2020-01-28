@@ -12,7 +12,7 @@ function init() {
 }
 
 function fetchPage(page) {
-    if (fetching) {
+    if (fetching || page === findActivePageNumber()) {
         return;
     }
     fetching = true;
@@ -23,6 +23,7 @@ function fetchPage(page) {
             return response.json();
         })
         .then(function (json) {
+            fetching = false;
             document.querySelector(selector).innerHTML = '';
 
             for (let punishment of json.data) {
@@ -47,7 +48,6 @@ function fetchPage(page) {
             }
 
             loadPages(json);
-            fetching = false;
         })
         .catch(function (err) {
             fetching = false;
@@ -62,6 +62,8 @@ function loadPages(json) {
     const curr = json.current_page;
     const last = json.last_page;
     let pageNumbers = [];
+
+    pagination.setAttribute("data-currentpage", curr);
 
     for (let i = curr - 3; i < curr + 4; i++) {
         pageNumbers.push(i);
@@ -106,8 +108,11 @@ function onPageClick(event) {
 
 function findActivePageNumber() {
     const pagination = document.querySelector('.pagination');
+    let page = pagination.hasAttribute("data-currentpage")
+        ? pagination.getAttribute("data-currentpage")
+        : 0;
 
-    return parseInt(pagination.querySelector('.active').innerText);
+    return parseInt(page);
 }
 
 function addTableData(tr, value, withSkull = false) {
