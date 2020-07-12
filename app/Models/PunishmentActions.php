@@ -1,10 +1,13 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
+use App\Traits\PageableTrait;
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Lang;
 
-class Warns extends Model
+class PunishmentActions extends Model
 {
     //
     use PageableTrait;
@@ -15,6 +18,6 @@ class Warns extends Model
     {
         parent::__construct($attributes);
 
-        $this->table = config('settings.tables.warns');
+        $this->table = config('settings.tables.bans');
     }
 }

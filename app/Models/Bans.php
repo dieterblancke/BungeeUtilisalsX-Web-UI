@@ -1,12 +1,13 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
+use App\Traits\PageableTrait;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Lang;
 
-class Mutes extends Model
+class Bans extends Model
 {
     //
     use PageableTrait;
@@ -18,7 +19,7 @@ class Mutes extends Model
     {
         parent::__construct($attributes);
 
-        $this->table = config('settings.tables.mutes');
+        $this->table = config('settings.tables.bans');
     }
 
     public function getExpiresAtAttribute()

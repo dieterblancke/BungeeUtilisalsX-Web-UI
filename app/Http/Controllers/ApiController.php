@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Bans;
-use App\Kicks;
-use App\Mutes;
-use App\Users;
-use App\Warns;
+use App\Models\Bans;
+use App\Models\Kicks;
+use App\Models\Mutes;
+use App\Models\Users;
+use App\Models\Warns;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Input;
 

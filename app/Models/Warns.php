@@ -1,10 +1,11 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
+use App\Traits\PageableTrait;
 use Illuminate\Database\Eloquent\Model;
 
-class Kicks extends Model
+class Warns extends Model
 {
     //
     use PageableTrait;
@@ -15,6 +16,6 @@ class Kicks extends Model
     {
         parent::__construct($attributes);
 
-        $this->table = config('settings.tables.kicks');
+        $this->table = config('settings.tables.warns');
     }
 }
