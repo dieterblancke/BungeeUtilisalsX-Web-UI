@@ -47,18 +47,18 @@
     }
 
     li:nth-child(1) h3 {
-        background: $latest-bans-head-bg;
-        color: $latest-bans-head-color;
+        background: $table-head-bg;
+        color: $table-head-color;
     }
 
     li:nth-child(2) h3 {
-        background: $latest-mutes-head-bg;
-        color: $latest-mutes-head-color;
+        background: $table-head-bg;
+        color: $table-head-color;
     }
 
     li:nth-child(3) h3 {
-        background: $latest-kicks-warns-head-bg;
-        color: $latest-kicks-warns-head-color;
+        background: $table-head-bg;
+        color: $table-head-color;
     }
 
     .date {
